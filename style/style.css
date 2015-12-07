@@ -1,0 +1,108 @@
+/*
+ * @file style.css
+ * @date 2015-12-06
+ * @author Tiago Lobato Gimenes    (tlgimenes@gmail.com)
+ * 
+ * @copyright Tiago Lobato Gimenes 2015. All rights reserved.
+ * 
+ * @license GNU Public License version 3
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * @brief 
+ * */
+
+/* ========================================================================== */
+html {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ========================================================================== */
+/* Navigation bar style 
+ * */
+nav {
+    margin: 0;
+    padding: 0;
+    width: 19%;
+    background-color: rgb(230, 230, 230);
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+#menu a {
+    display: block;
+    color: black;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+#menu a:hover {
+    background-color: #1793D1;
+    color: white;
+}
+
+#menu .active {
+    background-color: #1793D1;
+    color: white;
+}
+
+/* ========================================================================== */
+/* Content Style
+ * */
+.content {
+    margin-left: 20%;
+    padding: 1px 16px;
+    background-color: rgb(250, 250, 250);
+}
+
+/* ========================================================================== */
+/* Footer style
+ * */
+footer {
+    background-color: rgb(96,96,96);
+    text-align: center;
+    margin-left:20%;
+    padding:10px;
+    bottom: 0;
+    position: relative;
+}
+
+footer a {
+    color: black;
+}
+
+.footer-social-link {
+    padding: 10px;
+}
+
+/* ========================================================================== */
+/* Horizontal line style
+ * */
+hr.topic-content-separation {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.topics-separation {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* ========================================================================== */
