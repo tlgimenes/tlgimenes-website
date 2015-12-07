@@ -1,0 +1,149 @@
+/*
+ * @file mobile.css
+ * @date 2015-12-07
+ * @author Tiago Lobato Gimenes    (tlgimenes@gmail.com)
+ * 
+ * @copyright Tiago Lobato Gimenes 2015. All rights reserved.
+ * 
+ * @license GNU Public License version 3
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * @brief 
+ * */
+
+/* ========================================================================== */
+html {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ========================================================================== */
+/* Navigation bar style 
+ * */
+nav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%; 
+    position: fixed;  
+    overflow: auto;
+    background-color: rgb(230, 230, 230);
+}
+
+#menu a {
+    display: block;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+#menu a:hover {
+    background-color: #1793D1;
+    color: white;
+}
+
+#menu .active {
+    background-color: #1793D1;
+    color: white;
+}
+
+/* ========================================================================== */
+/*Navigation trigger
+ * */
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+.nav-trigger + label, .content {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .content {
+  left: 200px;
+}
+
+/* ========================================================================== */
+/* Content Style
+ * */
+.content {
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+   
+    padding: 1em 4em;
+    background-color: rgb(250, 250, 250);
+}
+
+.content a {
+    color: black;
+}
+
+/* ========================================================================== */
+/* Footer style
+ * */
+footer {
+    background-color: rgb(96,96,96);
+    text-align: center;
+    padding:10px;
+    bottom: 0;
+    position: relative;
+}
+
+footer a {
+    color: black;
+}
+
+.footer-social-link {
+    padding: 10px;
+}
+
+/* ========================================================================== */
+/* Horizontal line style
+ * */
+hr.topic-content-separation {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.topics-separation {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/* ========================================================================== */

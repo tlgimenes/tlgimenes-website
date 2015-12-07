@@ -34,7 +34,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
         user-scalable=yes">
         <title> Tiago L. Gimenes </title>
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 800px)"
+        href="style/desktop.css"/>
+        <link rel="stylesheet" media="screen and (max-device-width: 800px)"
+        href="style/mobile.css"/>
     </head>
 
     <body>
@@ -44,6 +47,9 @@
             <a class="active"href="interests.html">Interests</a>
             <a href="cool_stuff.html">Cool Sutff</a>
         </nav>
+
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
 
         <div class="content">
             <h1>
