@@ -78,6 +78,16 @@ nav {
     color: black;
 }
 
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content li {
+    font-weight: bold;
+    font-size: x-large;
+}
+
 /* ========================================================================== */
 /* Footer style
  * */
