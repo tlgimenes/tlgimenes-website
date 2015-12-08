@@ -1,0 +1,158 @@
+<!-- 
+  @file projects.html
+  @date 2015-12-08
+  @author Tiago Lobato Gimenes    (tlgimenes@gmail.com)
+ 
+  @copyright Tiago Lobato Gimenes 2015. All rights reserved.
+ 
+  @license GNU Public License version 3
+ 
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+ 
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  
+  @brief 
+-->
+
+<!-- *********************************************************************** -->
+<!-- Use HTML5 -->
+<!DOCTYPE html>
+
+<!-- *********************************************************************** -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        user-scalable=yes">
+        <title> Tiago L. Gimenes </title>
+        <link rel="stylesheet" media="screen and (min-device-width: 800px)"
+        href="style/desktop.css"/>
+        <link rel="stylesheet" media="screen and (max-device-width: 800px)"
+        href="style/mobile.css"/>
+    </head>
+
+    <body>
+        <nav id='menu'>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="interests.html">Interests</a>
+            <a class="active" href="projects.html">Projects</a>
+            <a href="cool_stuff.html">Cool Sutff</a>
+            <a href="t-log.html">T-log</a>
+        </nav>
+
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+
+        <div class="content">
+            <h1>
+                My projects
+                <hr class="topic-content-separation"> 
+            </h1>
+            Here you can find some of my university/personal projects. 
+            <p>
+            Mostly of my projects are hosted on <a
+                href="https://github.com/tlgimenes">GitHub</a> and have a self-explaning README
+            </p>
+        
+            <ul>
+                <li><a style="text-decoration: none" href="https://github.com/tlgimenes/RealTimeSkinRendering">Real Time Skin Rendering</a></li>
+                <p>
+                This is an implementation of the NVIDIA's demo of real-time skin 
+                rendering.
+                </p><p>
+                This project was done in as the final project of a university
+                course on rendering and it's not complete yet. It uses OpenGL 
+                4.5 shaders for rendering and calculating the diffuse and
+                specular light on the skin of the 3D model
+                </p><p>
+                For more informations, please visit the <a href="https://github.com/tlgimenes/RealTimeSkinRendering">Github</a>
+                page of the project.
+                </p>
+                <p>
+                You can see bellow a screenshot of the final result
+                </p>
+                <a href="images/realtimeskinrendering.png"><img src="images/realtimeskinrendering.png" alt="figure"></a>
+                <hr class="topic-content-separation"> 
+
+                <li><a style="text-decoration: none" href="https://github.com/tlgimenes/GPUImageSweep">GPU Image Sweep</a></li>
+                <p>
+                This is a full implementation of the Image Sweep algorithm in
+                OpenCL 1.1 
+                </p><p>
+                This project was done in as the final project of a university
+                course on computer vision and has as input two images as well as
+                their transition matrix.
+                </p><p>
+                With these inputs, the program can create, using the image sweep
+                algorith with the highest correlation, the 3D form of the object
+                in the pictures
+                </p><p>
+                For more informations, please visit the <a href="https://github.com/tlgimenes/GPUImageSweep">Github</a>
+                page of the project.
+                </p><p>
+                It was supposed to have a screenshot here, but beignet is
+                complainning too much to run this code. Nvidia's OpenCL
+                implementation should run it well :'(
+                </p>
+                <hr class="topic-content-separation"> 
+
+                <li><a style="text-decoration: none"
+                        href="https://github.com/tlgimenes/SparseModelingOfIntrinsicCorrespondences">Sparse Modeling of Intrinsic Correspondences</a></li>
+                <p>
+                This is the partial implementation of the technique used in a
+                paper with the title of Sparse Modeling of Instrinsic
+                Correspondences which aims to find the correnspondence between
+                two 3D models of the same object with a difference of a
+                non-rigid transformation.
+                </p><p>
+                This project was done in as the final project of a university
+                course on geometric modeling and the input is the two 3D models
+                and the query in the geometry
+                </p><p>
+                The <a href="https://github.com/tlgimenes/SparseModelingOfIntrinsicCorrespondences">GitHub</a> 
+                repository is still a mess and I hope I have time to give 
+                enough attention to this project and reformulate it's repository.
+                </p><p>
+                Bellow you can see the screenshot of the correspondences.
+                </p>
+                <a href="images/cat1.png"><img src="images/cat1.png"></a>
+                <a href="images/cat2.png"><img src="images/cat2.png"></a>
+                <hr class="topic-content-separation"> 
+
+                <p style="font-weight:bold">More projects are comming soon, stay tunned !</p>
+                <hr class="topic-content-separation"> 
+            </ul>
+        </div>
+
+        <p> <!-- Space between content and footer --> </p>
+
+        <footer>
+            <address>
+                <p>
+                Written by Tiago L. Gimenes
+                </p>
+                <a class="footer-social-link" href="https://github.com/tlgimenes">
+                    <img src="images/github-icon.png" alt="github" height=30px width=30px></img>
+                </a>
+                <a class="footer-social-link" href="mailto:tlgimenes@gmail.com">
+                    <img src="images/gmail-icon.ico" alt="mail" height=30px width=30px></img>
+                </a>
+                <a class="footer-social-link" href="https://plus.google.com/u/0/+TiagoGimenes">
+                    <img src="images/google-plus-icon.png" alt="g+" height=30px width=30px></img>
+                </a>
+            </address>
+        </footer>
+    </body>
+</html>
+
+<!-- *********************************************************************** -->
